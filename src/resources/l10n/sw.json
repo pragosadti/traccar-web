@@ -627,7 +627,8 @@
     "categoryTram": "Tramu",
     "categoryTruck": "Lori",
     "categoryVan": "Gari",
-    "categoryScooter": "Pikipiki",
-    "maintenanceStart": "Anza",
-    "maintenancePeriod": "Kipindi"
+    "categoryScooter": "Scooter",
+    "maintenanceStart": "Kuanza",
+    "maintenancePeriod": "Kipindi",
+    "reportNoResults": "Hakuna matokeo yaliyopatikana na kichuja kilichochaguliwa."
 }

@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -627,7 +627,8 @@
     "categoryTram": "Tramvaj",
     "categoryTruck": "Kamion",
     "categoryVan": "Kombi",
-    "categoryScooter": "Skuter",
-    "maintenanceStart": "Početak",
-    "maintenancePeriod": "Period"
+    "categoryScooter": "Скутер",
+    "maintenanceStart": "Почетак",
+    "maintenancePeriod": "Период",
+    "reportNoResults": "Нема резултата са изабраним филтерима."
 }

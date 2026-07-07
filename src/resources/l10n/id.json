@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -629,5 +629,10 @@
     "categoryVan": "Van",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "maintenancePeriod": "Period",
+    "grouped": "Dikelompokkan",
+    "sharedClearFilters": "Hapus Filter",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "Tidak ada hasil yang ditemukan dengan filter yang dipilih."
 }

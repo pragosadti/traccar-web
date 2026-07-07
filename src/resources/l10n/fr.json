@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets sombre",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Jeton d'Accès",
+    "mapMapKey": "Mapbox Jeton d'Accès",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler Clé d'API",
@@ -629,5 +629,6 @@
     "categoryVan": "Van",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Départ",
-    "maintenancePeriod": "Période"
+    "maintenancePeriod": "Période",
+    "reportNoResults": "Aucun résultat trouvé avec les filtres sélectionnés."
 }

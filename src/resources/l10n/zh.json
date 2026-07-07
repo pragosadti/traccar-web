@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox 深色街图",
     "mapMapboxOutdoors": "Mapbox 外景",
     "mapMapboxSatellite": "Mapbox 卫星地图",
-    "mapMapboxKey": "Mapbox 访问令牌",
+    "mapMapKey": "Mapbox 访问令牌",
     "mapMapTilerBasic": "MapTiler 基础地图",
     "mapMapTilerHybrid": "MapTiler 混合地图",
     "mapMapTilerKey": "MapTiler API 密钥",
@@ -627,7 +627,8 @@
     "categoryTram": "有轨电车",
     "categoryTruck": "卡车",
     "categoryVan": "厢式货车",
-    "categoryScooter": "小型摩托车",
-    "maintenanceStart": "开启",
-    "maintenancePeriod": "时段"
+    "categoryScooter": "滑板车",
+    "maintenanceStart": "开始",
+    "maintenancePeriod": "周期",
+    "reportNoResults": "未找到与选定过滤器匹配的结果。"
 }

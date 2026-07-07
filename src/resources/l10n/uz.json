@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -627,7 +627,8 @@
     "categoryTram": "Tram",
     "categoryTruck": "Юк автомобили",
     "categoryVan": "Van",
-    "categoryScooter": "Scooter",
-    "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "categoryScooter": "Skuter",
+    "maintenanceStart": "Boshlash",
+    "maintenancePeriod": "Davr",
+    "reportNoResults": "Tanlangan shartлarga ko'ra hech qanday natija topilmadi."
 }

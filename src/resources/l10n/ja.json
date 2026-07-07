@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -629,5 +629,10 @@
     "categoryVan": "バン",
     "categoryScooter": "スクーター",
     "maintenanceStart": "メンテナンス開始",
-    "maintenancePeriod": "メンテナンス終了"
+    "maintenancePeriod": "メンテナンス終了",
+    "grouped": "グループ化",
+    "sharedClearFilters": "フィルターをクリア",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "選択したフィルターに一致する結果が見つかりません。"
 }

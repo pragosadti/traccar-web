@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Tmavé",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satelitné snímky",
-    "mapMapboxKey": "Mapbox API kľuč",
+    "mapMapKey": "Mapbox API kľuč",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API kľuč",
@@ -628,6 +628,7 @@
     "categoryTruck": "Nákladné auto",
     "categoryVan": "Dodávka",
     "categoryScooter": "Skúter",
-    "maintenanceStart": "Štart",
-    "maintenancePeriod": "Obdobie"
+    "maintenanceStart": "Začiatok",
+    "maintenancePeriod": "Obdobie",
+    "reportNoResults": "Neboli nájdené žiadne výsledky s vybranými filtrami."
 }

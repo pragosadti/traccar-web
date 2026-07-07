@@ -631,7 +631,8 @@
     "maintenanceStart": "Iniciar",
     "maintenancePeriod": "Período",
     "grouped": "Agrupado",
-    "sharedClearFilters": "Limpar filtros",
-    "ignition": "Ignição",
-    "ignitionReport": "Relatório de Ignição"
-}
+     "sharedClearFilters": "Limpar filtros",
+     "ignition": "Ignição",
+     "ignitionReport": "Relatório de Ignição",
+     "reportNoResults": "Não foram encontrados resultados com os filtros selecionados."
+ }

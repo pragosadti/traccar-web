@@ -31,7 +31,8 @@ export default makeStyles()((theme) => ({
     display: 'flex',
   },
   filter: {
-    display: 'inline-flex',
+    display: 'flex',
+    width: '100%',
     flexWrap: 'wrap',
     gap: theme.spacing(2),
     padding: theme.spacing(3, 2, 2),

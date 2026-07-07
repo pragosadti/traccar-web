@@ -628,5 +628,6 @@
   "grouped": "Grouped",
   "sharedClearFilters": "Clear Filters",
   "ignition": "Ignition",
-  "ignitionReport": "Ignition Report"
+  "ignitionReport": "Ignition Report",
+  "reportNoResults": "No results found with the selected filters."
 }

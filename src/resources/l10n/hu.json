@@ -629,5 +629,10 @@
     "categoryVan": "Teherkocsi",
     "categoryScooter": "Roller",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Periódus"
+    "maintenancePeriod": "Periódus",
+    "grouped": "Csoportosítva",
+    "sharedClearFilters": "Szűrők törlése",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "Nem találhatók eredmények a kiválasztott szűrőkkel."
 }

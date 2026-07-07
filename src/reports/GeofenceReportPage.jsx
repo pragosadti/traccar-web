@@ -41,6 +41,7 @@ const GeofenceReportPage = () => {
   ]);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   const onShow = useCatch(async ({ deviceIds, groupIds, from, to }) => {
     const query = new URLSearchParams({ from, to });
@@ -48,6 +49,7 @@ const GeofenceReportPage = () => {
     groupIds.forEach((groupId) => query.append('groupId', groupId));
     geofenceIds.forEach((geofenceId) => query.append('geofenceId', geofenceId));
     setLoading(true);
+    setHasSearched(true);
     try {
       const response = await fetchOrThrow(`/api/reports/geofences?${query.toString()}`, {
         headers: { Accept: 'application/json' },
@@ -102,7 +104,18 @@ const GeofenceReportPage = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {!loading ? (
+          {loading ? (
+            <TableShimmer columns={columns.length + 1} />
+          ) : hasSearched && items.length === 0 ? (
+             <TableRow>
+               <TableCell colSpan={columns.length + 1} align="center">
+                 <div style={{ padding: 24, color: '#888' }}>
+                   <strong>{t('noData')}</strong>
+                   <div>{t('reportNoResults')}</div>
+                 </div>
+               </TableCell>
+             </TableRow>
+          ) : (
             items.map((item) => (
               <TableRow
                 key={`${item.deviceId}_${item.geofenceId}_${item.startTime}_${item.endTime}`}
@@ -113,8 +126,6 @@ const GeofenceReportPage = () => {
                 ))}
               </TableRow>
             ))
-          ) : (
-            <TableShimmer columns={columns.length + 1} />
           )}
         </TableBody>
       </Table>

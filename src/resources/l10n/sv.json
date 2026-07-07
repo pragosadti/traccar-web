@@ -629,5 +629,6 @@
     "categoryVan": "Van",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "maintenancePeriod": "Period",
+    "reportNoResults": "Inga resultat hittades med de valda filtren."
 }

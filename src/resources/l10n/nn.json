@@ -629,5 +629,6 @@
     "categoryVan": "Varebil",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Periode"
+    "maintenancePeriod": "Periode",
+    "reportNoResults": "Ingen resultat funne med dei valde filtrera."
 }

@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Fosc",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -629,5 +629,8 @@
     "categoryVan": "Furgoneta",
     "categoryScooter": "Moto",
     "maintenanceStart": "Iniciar",
-    "maintenancePeriod": "Període"
+    "maintenancePeriod": "Període",
+    "grouped": "Agrupat",
+    "sharedClearFilters": "Esborrar filtres",
+    "reportNoResults": "No s'han trobat resultats amb els filtres seleccionats."
 }

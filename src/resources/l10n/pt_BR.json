@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Escuro",
     "mapMapboxOutdoors": "Mapbox ao ar livre",
     "mapMapboxSatellite": "Mapbox Satélite",
-    "mapMapboxKey": "Mapbox Token de Acesso",
+    "mapMapKey": "Mapbox Token de Acesso",
     "mapMapTilerBasic": "MapTiler Básico",
     "mapMapTilerHybrid": "MapTiler Híbrido",
     "mapMapTilerKey": "MapTiler Chave API",
@@ -628,6 +628,7 @@
     "categoryTruck": "Caminhão",
     "categoryVan": "Van",
     "categoryScooter": "Patinete Elétrico",
-    "maintenanceStart": "Começar",
-    "maintenancePeriod": "Período"
+    "maintenanceStart": "Início",
+    "maintenancePeriod": "Período",
+    "reportNoResults": "Nenhum resultado encontrado com os filtros selecionados."
 }

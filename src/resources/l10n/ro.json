@@ -629,5 +629,6 @@
     "categoryVan": "Duba",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Perioada"
+    "maintenancePeriod": "Perioada",
+    "reportNoResults": "Nu au fost găsite rezultate cu filtrele selectate."
 }

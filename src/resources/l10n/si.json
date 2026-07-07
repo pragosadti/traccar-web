@@ -206,7 +206,7 @@
     "loginOpenId": "Login with OpenID",
     "loginFailed": "වි-තැපැල් ලිපිනය හෝ මුරපදය වැරදිය!",
     "loginCreated": "නව පරිශීලකයෙකු ලියාපදිංචි වී ඇත",
-    "loginResetSuccess": "ඔබගේ විද්යුත් තැපෑල පරීක්ෂා කරන්න",
+    "loginResetSuccess": "ඔබගේ විදුල් තැපෑල පරීක්ෂා කරන්න",
     "loginUpdateSuccess": "නව මුරපදය සකසා ඇත",
     "loginLogout": "නික්මෙන්න",
     "loginLogo": "ලාංඡනය",
@@ -259,7 +259,7 @@
     "reportTitle": "වාර්තාව",
     "reportScheduled": "Scheduled Reports",
     "reportDevice": "වැනි",
-    "reportGroup": "සමුහය",
+    "reportGroup": "සමූහය",
     "reportFrom": "සිට",
     "reportTo": "දක්වා",
     "reportShow": "පෙන්වන්න",
@@ -520,7 +520,7 @@
     "alarmDoor": "දොර",
     "alarmLock": "අගුළු දමන්න",
     "alarmUnlock": "අගුළු හරින්න",
-    "alarmGeofence": "භූ වැට",
+    "alarmGeofence": "භූ වැටිය",
     "alarmGeofenceEnter": "Geofence Enter",
     "alarmGeofenceExit": "Geofence පිටවීම",
     "alarmGpsAntennaCut": "GPS ඇන්ටෙනා කැපීම",
@@ -627,7 +627,8 @@
     "categoryTram": "ට්‍රෑම් රථය",
     "categoryTruck": "ට්රක් රථය",
     "categoryVan": "වෑන්",
-    "categoryScooter": "ස්කූටරය",
-    "maintenanceStart": "ආරම්භය",
-    "maintenancePeriod": "කාලය"
+    "categoryScooter": "ස්කූටර්",
+    "maintenanceStart": "ආරම්භ",
+    "maintenancePeriod": "කාල පරිච්ඡේදය",
+    "reportNoResults": "තෝරාගත් ෂෙඩ්ස් සමඟ ෂෙඩ්සෙ ඉවත් කර ගෙන ය."
 }

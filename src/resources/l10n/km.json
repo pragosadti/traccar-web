@@ -627,7 +627,8 @@
     "categoryTram": "Tram",
     "categoryTruck": "រថយន្តដឹកទំនិញ",
     "categoryVan": "Van",
-    "categoryScooter": "Scooter",
-    "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "categoryScooter": "ស្កូតគ",
+    "maintenanceStart": "ចាប់ផ្តើម",
+    "maintenancePeriod": "រយៈពេល",
+    "reportNoResults": "មិនបានរកឃើញលទ្ធផលដែលមានតម្រងដែលបានជ្រើស។"
 }

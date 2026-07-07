@@ -328,7 +328,7 @@
     "positionCoolantTemp": "درجة حرارة سائل التبريد",
     "positionEngineTemp": "درجة حرارة المحرك",
     "positionOperator": "المشغل",
-    "positionCommand": "أمر",
+    "positionCommand": " أمر",
     "positionBlocked": "محظور",
     "positionDtcs": "DTCs",
     "positionObdSpeed": "سرعة OBD",
@@ -410,7 +410,7 @@
     "mapHereFlow": "حركة المرور من Here",
     "mapHereKey": "مفتاح API من Here",
     "mapShapePolygon": "مضلع",
-    "mapShapeCircle": "دائرة",
+    "mapShapeCircle": " دائرة",
     "mapShapePolyline": "متعدد الضلوع",
     "mapLiveRoutes": "مسار حي",
     "mapDirection": "عرض الاتجاه",
@@ -629,5 +629,8 @@
     "categoryVan": "نقل",
     "categoryScooter": "سكوتر",
     "maintenanceStart": "بداية",
-    "maintenancePeriod": "فترة"
+    "maintenancePeriod": "فترة",
+    "grouped": "مجموعة",
+    "sharedClearFilters": "مسح المرشحات",
+    "reportNoResults": "لم يتم العثور على نتائج مع المرشحات المحددة."
 }

@@ -629,5 +629,6 @@
     "categoryVan": "Комбе",
     "categoryScooter": "Скутер",
     "maintenanceStart": "Почеток",
-    "maintenancePeriod": "Период"
+    "maintenancePeriod": "Период",
+    "reportNoResults": "Нема резултати со избраните филтери."
 }

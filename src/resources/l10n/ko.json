@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox 실외 지도",
     "mapMapboxSatellite": "Mapbox 위성 지도",
-    "mapMapboxKey": "Mapbox 액세스 토큰",
+    "mapMapKey": "Mapbox 액세스 토큰",
     "mapMapTilerBasic": "MapTiler 기본 지도",
     "mapMapTilerHybrid": "MapTiler 하이브리드 지도",
     "mapMapTilerKey": "MapTiler API 키",
@@ -629,5 +629,10 @@
     "categoryVan": "밴",
     "categoryScooter": "오토바이",
     "maintenanceStart": "시작",
-    "maintenancePeriod": "주기"
+    "maintenancePeriod": "주기",
+    "grouped": "분류됨",
+    "sharedClearFilters": "필터 지우기",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "선택한 필터로 결과를 찾을 수 없습니다."
 }

@@ -629,5 +629,6 @@
     "categoryVan": "ფურგონი",
     "categoryScooter": "სკუტერი",
     "maintenanceStart": "დაწყება",
-    "maintenancePeriod": "პერიოდი"
+    "maintenancePeriod": "პერიოდი",
+    "reportNoResults": "არ არის ნაპოვნი შედეგი არჩეული ფილტერების მიხედვით."
 }

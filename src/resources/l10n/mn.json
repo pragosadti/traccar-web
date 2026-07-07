@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -627,7 +627,8 @@
     "categoryTram": "Tram",
     "categoryTruck": "Truck",
     "categoryVan": "Van",
-    "categoryScooter": "Scooter",
-    "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "categoryScooter": "Хихүүлэгч",
+    "maintenanceStart": "Эхлүүлэх",
+    "maintenancePeriod": "Үе",
+    "reportNoResults": "Сонгосон шүүлтүүр дээр үндэслэн ямар ч үр дүн олдсонгүй."
 }

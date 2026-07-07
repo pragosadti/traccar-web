@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Tmavé",
     "mapMapboxOutdoors": "Mapbox venkovní",
     "mapMapboxSatellite": "Mapbox satelit",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Základní",
     "mapMapTilerHybrid": "MapTiler Hybridní",
     "mapMapTilerKey": "MapTiler API Klíč",
@@ -629,5 +629,10 @@
     "categoryVan": "Dodávka",
     "categoryScooter": "Koloběžka",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Perioda"
+    "maintenancePeriod": "Perioda",
+    "grouped": "Česky",
+    "sharedClearFilters": "Vymazat filtry",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "S vybranými filtry nebyla nalezena žádná data."
 }

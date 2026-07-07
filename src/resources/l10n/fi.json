@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets tumma",
     "mapMapboxOutdoors": "Mapbox ulkoilu",
     "mapMapboxSatellite": "Mapbox satelliitti",
-    "mapMapboxKey": "Mapbox pääsyavain",
+    "mapMapKey": "Mapbox pääsyavain",
     "mapMapTilerBasic": "MapTile perus",
     "mapMapTilerHybrid": "MapTiler hybrid",
     "mapMapTilerKey": "MapTiler API-avain",
@@ -629,5 +629,10 @@
     "categoryVan": "Pakettiauto",
     "categoryScooter": "Potkulauta",
     "maintenanceStart": "Alku",
-    "maintenancePeriod": "Huoltoväli"
+    "maintenancePeriod": "Huoltoväli",
+    "grouped": "Ryhmitetty",
+    "sharedClearFilters": "Tyhjennä suodattimet",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "Valituilla suodattimilla ei löytynyt tuloksia."
 }

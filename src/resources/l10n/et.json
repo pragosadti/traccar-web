@@ -629,5 +629,10 @@
     "categoryVan": "Kaubik",
     "categoryScooter": "Tõukeratas",
     "maintenanceStart": "Algus",
-    "maintenancePeriod": "Periood"
+    "maintenancePeriod": "Periood",
+    "grouped": "Segmentid",
+    "sharedClearFilters": "Puhasta filtrid",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "Valitud filtritega tulemusi ei leitud."
 }

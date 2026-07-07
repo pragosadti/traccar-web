@@ -45,6 +45,7 @@ const ChartReportPage = () => {
   const [types, setTypes] = useState(['speed']);
   const [selectedTypes, setSelectedTypes] = useState(['speed']);
   const [timeType, setTimeType] = useState('fixTime');
+  const [hasSearched, setHasSearched] = useState(false);
 
   const values = items.map((it) =>
     selectedTypes.map((type) => it[type]).filter((value) => value != null),
@@ -111,6 +112,7 @@ const ChartReportPage = () => {
     });
     setTypes([...keyList, ...keySet]);
     setItems(formattedPositions);
+    setHasSearched(true);
   });
 
   const colorPalette = [
@@ -160,7 +162,7 @@ const ChartReportPage = () => {
           </FormControl>
         </div>
       </ReportFilter>
-      {items.length > 0 && (
+      {items.length > 0 ? (
         <div className={classes.chart}>
           <ResponsiveContainer>
             <LineChart
@@ -215,7 +217,12 @@ const ChartReportPage = () => {
             </LineChart>
           </ResponsiveContainer>
         </div>
-      )}
+       ) : hasSearched ? (
+         <div style={{ padding: 24, color: '#888', textAlign: 'center' }}>
+           <strong>{t('noData')}</strong>
+           <div>{t('reportNoResults')}</div>
+         </div>
+       ) : null}
     </PageLayout>
   );
 };

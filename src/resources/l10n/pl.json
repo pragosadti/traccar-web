@@ -629,5 +629,6 @@
     "categoryVan": "Van",
     "categoryScooter": "Skuter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Okres"
+    "maintenancePeriod": "Okres",
+    "reportNoResults": "Nie znaleziono wyników z wybranymi filtrami."
 }

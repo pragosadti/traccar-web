@@ -45,6 +45,7 @@ const PositionsReportPage = () => {
     : null;
   const [loading, setLoading] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [hasSearched, setHasSearched] = useState(false);
 
   const selectedRef = useRef();
 
@@ -90,6 +91,7 @@ const PositionsReportPage = () => {
         [...keyList, ...keySet].map((key) => [key, positionAttributes[key]?.name || key]),
       );
       setItems(data);
+      setHasSearched(true);
     } finally {
       setLoading(false);
     }
@@ -173,7 +175,18 @@ const PositionsReportPage = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {!loading ? (
+              {loading ? (
+                <TableShimmer columns={columns.length + 1} startAction />
+              ) : hasSearched && items.length === 0 ? (
+                 <TableRow>
+                   <TableCell colSpan={columns.length + 1} align="center">
+                     <div style={{ padding: 24, color: '#888' }}>
+                       <strong>{t('noData')}</strong>
+                       <div>{t('reportNoResults')}</div>
+                     </div>
+                   </TableCell>
+                 </TableRow>
+              ) : (
                 items.slice(0, 4000).map((item) => (
                   <TableRow key={item.id}>
                     <TableCell className={classes.columnAction} padding="none">
@@ -212,8 +225,6 @@ const PositionsReportPage = () => {
                     </TableCell>
                   </TableRow>
                 ))
-              ) : (
-                <TableShimmer columns={columns.length + 1} startAction />
               )}
             </TableBody>
           </Table>

@@ -627,7 +627,8 @@
     "categoryTram": "Tramvajs",
     "categoryTruck": "Smagā mašīna",
     "categoryVan": "Busiņš",
-    "categoryScooter": "Skrejritenis",
-    "maintenanceStart": "Sākt",
-    "maintenancePeriod": "Periods"
+    "categoryScooter": "Skūteris",
+    "maintenanceStart": "Sākums",
+    "maintenancePeriod": "Periods",
+    "reportNoResults": "Rezultāti ar atlasītajiem filtriem netika atrasti."
 }

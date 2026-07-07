@@ -27,6 +27,7 @@ const CombinedReportPage = () => {
 
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   const itemsCoordinates = useMemo(() => items.flatMap((item) => item.route), [items]);
 
@@ -46,6 +47,7 @@ const CombinedReportPage = () => {
     deviceIds.forEach((deviceId) => query.append('deviceId', deviceId));
     groupIds.forEach((groupId) => query.append('groupId', groupId));
     setLoading(true);
+    setHasSearched(true);
     try {
       const response = await fetchOrThrow(`/api/reports/combined?${query.toString()}`);
       setItems(await response.json());
@@ -88,7 +90,18 @@ const CombinedReportPage = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {!loading ? (
+              {loading ? (
+                <TableShimmer columns={3} />
+               ) : hasSearched && items.length === 0 ? (
+                 <TableRow>
+                   <TableCell colSpan={3} align="center">
+                     <div style={{ padding: 24, color: '#888' }}>
+                       <strong>{t('noData')}</strong>
+                       <div>{t('reportNoResults')}</div>
+                     </div>
+                   </TableCell>
+                 </TableRow>
+               ) : (
                 items.flatMap((item) =>
                   item.events.map((event, index) => (
                     <TableRow key={event.id}>
@@ -98,8 +111,6 @@ const CombinedReportPage = () => {
                     </TableRow>
                   )),
                 )
-              ) : (
-                <TableShimmer columns={3} />
               )}
             </TableBody>
           </Table>

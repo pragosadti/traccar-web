@@ -627,7 +627,8 @@
     "categoryTram": "Tram",
     "categoryTruck": "Truck",
     "categoryVan": "Van",
-    "categoryScooter": "Scooter",
-    "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "categoryScooter": "സ്കൂട്ടർ",
+    "maintenanceStart": "ആരംഭിക്കുക",
+    "maintenancePeriod": "കാലയളവ്",
+    "reportNoResults": "തിരഞ്ഞെടുത്ത ഫിൽട്ടറുകൾ ഉപയോഗിച്ച് ഫലങ്ങൾ കണ്ടെത്തിയില്ല."
 }

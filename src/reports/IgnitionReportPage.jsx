@@ -57,6 +57,7 @@ const IgnitionReportPage = () => {
   const [grouped, setGrouped] = useState(false);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   useEffect(() => {
     setColumns(['geofence', 'startTime', 'engineHours']);
@@ -88,6 +89,7 @@ const IgnitionReportPage = () => {
       }
     } else {
       setLoading(true);
+      setHasSearched(true);
       try {
         const response = await fetch(`/api/reports/ignition?${query.toString()}`, {
           headers: { Accept: 'application/json' },
@@ -113,6 +115,14 @@ const IgnitionReportPage = () => {
       navigate('/reports/scheduled');
     }
   });
+
+  const onShow = ({ deviceIds, groupIds, from, to }) => {
+    handleSubmit({ deviceIds, groupIds, from, to, type: 'json', grouped });
+  };
+
+  const onExport = ({ deviceIds, groupIds, from, to }) => {
+    handleSubmit({ deviceIds, groupIds, from, to, type: 'export', grouped });
+  };
 
   const formatValue = (item, key) => {
     const value = item[key];
@@ -143,10 +153,7 @@ const IgnitionReportPage = () => {
   return (
     <PageLayout menu={<ReportsMenu/>} breadcrumbs={['reportTitle', 'reportIgnition']}>
       <div className={classes.header}>
-        <ReportFilter handleSubmit={(params) => handleSubmit({
-          ...params,
-          grouped
-        })} handleSchedule={handleSchedule} multiDevice includeGroups loading={loading}>
+        <ReportFilter onShow={onShow} onExport={onExport} onSchedule={handleSchedule} deviceType="multiple" loading={loading}>
           <div className={classes.filterItem}>
             <FormControl fullWidth>
               <InputLabel>{t('sharedType')}</InputLabel>
@@ -179,16 +186,29 @@ const IgnitionReportPage = () => {
         </TableHead>
 
         <TableBody>
-          {!loading ? items.map((item) => (
-            <TableRow key={(`${item.deviceId}_${Date.parse(item.startTime)}`)}>
-              <TableCell>{devices[item.deviceId].name}</TableCell>
-              {columns.map((key) => (
-                <TableCell key={key}>
-                  {formatValue(item, key)}
-                </TableCell>
-              ))}
-            </TableRow>
-          )) : (<TableShimmer columns={columns.length + 1}/>)}
+          {loading ? (
+            <TableShimmer columns={columns.length + 1} />
+          ) : hasSearched && items.length === 0 ? (
+             <TableRow>
+               <TableCell colSpan={columns.length + 1} align="center">
+                 <div style={{ padding: 24, color: '#888' }}>
+                   <strong>{t('noData')}</strong>
+                   <div>{t('reportNoResults')}</div>
+                 </div>
+               </TableCell>
+             </TableRow>
+          ) : (
+            items.map((item) => (
+              <TableRow key={(`${item.deviceId}_${Date.parse(item.startTime)}`)}>
+                <TableCell>{devices[item.deviceId].name}</TableCell>
+                {columns.map((key) => (
+                  <TableCell key={key}>
+                    {formatValue(item, key)}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))
+          )}
         </TableBody>
 
       </Table>

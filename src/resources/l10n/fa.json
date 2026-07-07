@@ -629,5 +629,6 @@
     "categoryVan": "ون",
     "categoryScooter": "اسکوتر",
     "maintenanceStart": "شروع",
-    "maintenancePeriod": "بازه"
+    "maintenancePeriod": "دوره",
+    "reportNoResults": "هیچ نتیجه ای با فیلترهای انتخاب شده یافت نشد."
 }

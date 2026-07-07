@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -627,7 +627,8 @@
     "categoryTram": "டிராம்",
     "categoryTruck": "கண ரக வாகனம்",
     "categoryVan": "வேன் வாகனம் ",
-    "categoryScooter": "Scooter",
-    "maintenanceStart": "துவக்கு ",
-    "maintenancePeriod": "காலம்"
+    "categoryScooter": "ஸ்கூட்டர்",
+    "maintenanceStart": "தொடங்க",
+    "maintenancePeriod": "காலம்",
+    "reportNoResults": "தேர்ந்தெடுக்கப்பட்ட வடிப்பிகளுடன் எந்த முடிவுகளும் கிடைக்கவில்லை."
 }

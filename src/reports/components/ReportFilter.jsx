@@ -88,7 +88,7 @@ const ReportFilter = ({ children, onShow, onExport, onSchedule, deviceType, load
   const options = evaluateOptions();
 
   useEffect(() => {
-    if (from && to) {
+    if (onShow && from && to) {
       onShow({ deviceIds, groupIds, from, to });
     }
   }, [deviceIds, groupIds, from, to]);

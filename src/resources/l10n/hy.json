@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -628,6 +628,7 @@
     "categoryTruck": "Բեռնատար մեքենա",
     "categoryVan": "Վան",
     "categoryScooter": "Սկուտեր",
-    "maintenanceStart": "Ստարտ",
-    "maintenancePeriod": "Ժամանակաշրջան"
+    "maintenanceStart": "Սկիզբ",
+    "maintenancePeriod": "Ժամանակաշրջան",
+    "reportNoResults": "Ընտրված ֆիլտրերով արդյունք չգտնվել։"
 }

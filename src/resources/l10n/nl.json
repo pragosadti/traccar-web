@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "MapBox toegangsleutel",
+    "mapMapKey": "MapBox toegangsleutel",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API sleutel",
@@ -628,6 +628,7 @@
     "categoryTruck": "Vrachtwagen",
     "categoryVan": "Busje",
     "categoryScooter": "Scooter",
-    "maintenanceStart": "Start",
-    "maintenancePeriod": "Periode"
+    "maintenanceStart": "Starten",
+    "maintenancePeriod": "Periode",
+    "reportNoResults": "Geen resultaten gevonden met de geselecteerde filters."
 }

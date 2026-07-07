@@ -627,7 +627,8 @@
     "categoryTram": "Tramvay",
     "categoryTruck": "Kamyon",
     "categoryVan": "Van",
-    "categoryScooter": "Mobilet",
-    "maintenanceStart": "Başlat",
-    "maintenancePeriod": "Dönem"
+    "categoryScooter": "Scooter",
+    "maintenanceStart": "Başla",
+    "maintenancePeriod": "Dönem",
+    "reportNoResults": "Seçilen filtrelerle hiç bir sonuç bulunamadı."
 }

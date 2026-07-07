@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -629,5 +629,10 @@
     "categoryVan": "Furgoneta",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Comezar",
-    "maintenancePeriod": "Período"
+    "maintenancePeriod": "Período",
+    "grouped": "Clustered",
+    "sharedClearFilters": "Clear Filters",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "No results found with the selected filters."
 }

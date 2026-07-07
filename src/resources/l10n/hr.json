@@ -629,5 +629,6 @@
     "categoryVan": "Kombi",
     "categoryScooter": "Skuter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "maintenancePeriod": "Period",
+    "reportNoResults": "Nema rezultata s odabranim filtrima."
 }

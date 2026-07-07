@@ -65,6 +65,7 @@ const StopReportPage = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [hasSearched, setHasSearched] = useState(false);
 
   const onShow = useCatch(async ({ deviceIds, groupIds, from, to }) => {
     const query = new URLSearchParams({ from, to });
@@ -76,6 +77,7 @@ const StopReportPage = () => {
         headers: { Accept: 'application/json' },
       });
       setItems(await response.json());
+      setHasSearched(true);
     } finally {
       setLoading(false);
     }
@@ -183,7 +185,18 @@ const StopReportPage = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {!loading ? (
+              {loading ? (
+                <TableShimmer columns={columns.length + 2} startAction />
+              ) : hasSearched && items.length === 0 ? (
+                 <TableRow>
+                   <TableCell colSpan={columns.length + 2} align="center">
+                     <div style={{ padding: 24, color: '#888' }}>
+                       <strong>{t('noData')}</strong>
+                       <div>{t('reportNoResults')}</div>
+                     </div>
+                   </TableCell>
+                 </TableRow>
+              ) : (
                 items.map((item) => (
                   <TableRow key={item.positionId}>
                     <TableCell className={classes.columnAction} padding="none">
@@ -203,8 +216,6 @@ const StopReportPage = () => {
                     ))}
                   </TableRow>
                 ))
-              ) : (
-                <TableShimmer columns={columns.length + 2} startAction />
               )}
             </TableBody>
           </Table>

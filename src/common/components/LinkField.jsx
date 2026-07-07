@@ -30,11 +30,9 @@ const LinkField = ({
   }, [active]);
 
   useEffectAsync(async () => {
-    if (active) {
-      const response = await fetchOrThrow(endpointLinked);
-      setLinked(await response.json());
-    }
-  }, [active]);
+    const response = await fetchOrThrow(endpointLinked);
+    setLinked(await response.json());
+  }, [endpointLinked]);
 
   const createBody = (linkId) => {
     const body = {};
@@ -45,7 +43,7 @@ const LinkField = ({
 
   const onChange = useCatchCallback(
     async (value) => {
-      const oldValue = linked.map((it) => keyGetter(it));
+      const oldValue = (linked || []).map((it) => keyGetter(it));
       const newValue = value.map((it) => keyGetter(it));
       if (!newValue.find((it) => it < 0)) {
         const results = [];
@@ -94,7 +92,7 @@ const LinkField = ({
             placeholder={!active ? t('reportShow') : null}
           />
         )}
-        value={(items && linked) || []}
+        value={linked || []}
         onChange={(_, value) => onChange(value)}
         open={open}
         onOpen={() => {

@@ -71,12 +71,14 @@ const SummaryReportPage = () => {
   const daily = searchParams.get('daily') === 'true';
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
   const onShow = useCatch(async ({ deviceIds, groupIds, from, to }) => {
     const query = new URLSearchParams({ from, to, daily });
     deviceIds.forEach((deviceId) => query.append('deviceId', deviceId));
     groupIds.forEach((groupId) => query.append('groupId', groupId));
     setLoading(true);
+    setHasSearched(true);
     try {
       const response = await fetchOrThrow(`/api/reports/summary?${query.toString()}`, {
         headers: { Accept: 'application/json' },
@@ -179,7 +181,18 @@ const SummaryReportPage = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {!loading ? (
+          {loading ? (
+            <TableShimmer columns={columns.length + 1} />
+          ) : hasSearched && items.length === 0 ? (
+             <TableRow>
+               <TableCell colSpan={columns.length + 1} align="center">
+                 <div style={{ padding: 24, color: '#888' }}>
+                   <strong>{t('noData')}</strong>
+                   <div>{t('reportNoResults')}</div>
+                 </div>
+               </TableCell>
+             </TableRow>
+          ) : (
             items.map((item) => (
               <TableRow key={`${item.deviceId}_${Date.parse(item.startTime)}`}>
                 <TableCell>{devices[item.deviceId].name}</TableCell>
@@ -188,8 +201,6 @@ const SummaryReportPage = () => {
                 ))}
               </TableRow>
             ))
-          ) : (
-            <TableShimmer columns={columns.length + 1} />
           )}
         </TableBody>
       </Table>

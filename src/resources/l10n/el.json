@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Οδικός Σκοτεινός",
     "mapMapboxOutdoors": "Mapbox Υπαίθριος",
     "mapMapboxSatellite": "Mapbox Δορυφορικός",
-    "mapMapboxKey": "Mapbox Διακριτικό Πρόσβασης",
+    "mapMapKey": "Mapbox Διακριτικό Πρόσβασης",
     "mapMapTilerBasic": "MapTiler Βασικός",
     "mapMapTilerHybrid": "MapTiler Υβριδικός",
     "mapMapTilerKey": "MapTiler Κλειδί API",
@@ -629,5 +629,10 @@
     "categoryVan": "Κλειστό Φορτηγό",
     "categoryScooter": "Σκούτερ",
     "maintenanceStart": "Εκκίνηση",
-    "maintenancePeriod": "Περίοδος"
+    "maintenancePeriod": "Περίοδος",
+    "grouped": "Ομαδοποιημένα",
+    "sharedClearFilters": "Σε καθαρό φίλτρα",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "Δεν βρέθηκαν αποτελέσματα με τα επιλεγμένα φίλτρα."
 }

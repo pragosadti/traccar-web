@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -629,5 +629,8 @@
     "categoryVan": "ভ্যান",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Start",
-    "maintenancePeriod": "Period"
+    "maintenancePeriod": "Period",
+    "grouped": "গোষ্ঠীবদ্ধ",
+    "sharedClearFilters": "ফিল্টার সাফ করুন",
+    "reportNoResults": "নির্বাচিত ফিল্টারগুলির সাথে কোনও ফলাফল পাওয়া যায়নি।"
 }

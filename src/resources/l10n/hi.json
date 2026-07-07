@@ -629,5 +629,6 @@
     "categoryVan": "वैन",
     "categoryScooter": "Scooter",
     "maintenanceStart": "प्रारंभ",
-    "maintenancePeriod": "अवधि"
+    "maintenancePeriod": "अवधि",
+    "reportNoResults": "चयनित फ़िल्टर के साथ कोई परिणाम नहीं मिले।"
 }

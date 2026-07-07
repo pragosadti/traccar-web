@@ -629,5 +629,6 @@
     "categoryVan": "מסחרית",
     "categoryScooter": "קטנוע",
     "maintenanceStart": "התחל",
-    "maintenancePeriod": "פרק זמן "
+    "maintenancePeriod": "פרק זמן ",
+    "reportNoResults": "לא נמצאו תוצאות עם המסננים שנבחרו."
 }

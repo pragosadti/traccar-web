@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Stradale Notturno",
     "mapMapboxOutdoors": "Mapbox all'Aperto",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Token di Accesso",
+    "mapMapKey": "Mapbox Token di Accesso",
     "mapMapTilerBasic": "MapTiler Base",
     "mapMapTilerHybrid": "MapTiler Ibrida",
     "mapMapTilerKey": "MapTiler Chiave API",
@@ -629,5 +629,6 @@
     "categoryVan": "Furgone",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Inizio",
-    "maintenancePeriod": "Periodo"
+    "maintenancePeriod": "Periodo",
+    "reportNoResults": "Nessun risultato trovato con i filtri selezionati."
 }

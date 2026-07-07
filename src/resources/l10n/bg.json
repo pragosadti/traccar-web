@@ -629,5 +629,8 @@
     "categoryVan": "Ван",
     "categoryScooter": "Скутер",
     "maintenanceStart": "Старт",
-    "maintenancePeriod": "Период"
+    "maintenancePeriod": "Период",
+    "grouped": "Групирано",
+    "sharedClearFilters": "Изчистване на филтри",
+    "reportNoResults": "Няма намерени резултати с избраните филтри."
 }

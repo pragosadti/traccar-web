@@ -251,7 +251,18 @@ const TripReportPage = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {!loading ? (
+              {loading ? (
+                <TableShimmer columns={columns.length + 2} startAction />
+              ) : items.length === 0 ? (
+                <TableRow>
+                  <TableCell colSpan={columns.length + 2} align="center">
+                    <div style={{ padding: 24, color: '#888' }}>
+                      <strong>{t('noData')}</strong>
+                      <div>{t('reportNoResults') || 'Try adjusting the time range or filters'}</div>
+                    </div>
+                  </TableCell>
+                </TableRow>
+              ) : (
                 items.map((item) => (
                   <TableRow key={item.startPositionId}>
                     <TableCell className={classes.columnAction} padding="none">
@@ -276,8 +287,6 @@ const TripReportPage = () => {
                     ))}
                   </TableRow>
                 ))
-              ) : (
-                <TableShimmer columns={columns.length + 2} startAction />
               )}
             </TableBody>
           </Table>

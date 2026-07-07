@@ -629,5 +629,6 @@
     "categoryVan": "Фургон",
     "categoryScooter": "Скутер",
     "maintenanceStart": "Початок",
-    "maintenancePeriod": "Період"
+    "maintenancePeriod": "Період",
+    "reportNoResults": "За вибраними фільтрами результати не знайдені."
 }

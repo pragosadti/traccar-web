@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox Streets Dark",
     "mapMapboxOutdoors": "Mapbox Outdoors",
     "mapMapboxSatellite": "Mapbox Satellite",
-    "mapMapboxKey": "Mapbox Access Token",
+    "mapMapKey": "Mapbox Access Token",
     "mapMapTilerBasic": "MapTiler Basic",
     "mapMapTilerHybrid": "MapTiler Hybrid",
     "mapMapTilerKey": "MapTiler API Key",
@@ -629,5 +629,8 @@
     "categoryVan": "Furqon",
     "categoryScooter": "Scooter",
     "maintenanceStart": "Başlamaq",
-    "maintenancePeriod": "Dövr"
+    "maintenancePeriod": "Dövr",
+    "grouped": "Qruplaşdırılmış",
+    "sharedClearFilters": "Filtrləri Təmizlə",
+    "reportNoResults": "Seçilmiş filtrlərə uyğun nəticə tapılmadı."
 }

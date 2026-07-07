@@ -392,7 +392,7 @@
     "mapMapboxStreetsDark": "Mapbox 街道黑暗",
     "mapMapboxOutdoors": "Mapbox 外景",
     "mapMapboxSatellite": "Mapbox 衛星地圖",
-    "mapMapboxKey": "Maxbox 訪問令牌",
+    "mapMapKey": "Maxbox 訪問令牌",
     "mapMapTilerBasic": "MapTiler 基礎地圖",
     "mapMapTilerHybrid": "MapTiler 混合地圖",
     "mapMapTilerKey": "MapTiler API 密鑰",
@@ -627,7 +627,8 @@
     "categoryTram": "有軌電車",
     "categoryTruck": "貨車",
     "categoryVan": "箱型車",
-    "categoryScooter": "小型摩拖車",
-    "maintenanceStart": "起始值",
-    "maintenancePeriod": "期間"
+    "categoryScooter": "滑板車",
+    "maintenanceStart": "開始",
+    "maintenancePeriod": "週期",
+    "reportNoResults": "未找到與選定過濾器匹配的結果。"
 }

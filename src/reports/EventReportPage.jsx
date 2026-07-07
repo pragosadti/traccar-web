@@ -88,6 +88,7 @@ const EventReportPage = () => {
   const [loading, setLoading] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [position, setPosition] = useState(null);
+  const [hasSearched, setHasSearched] = useState(false);
 
   useEffect(() => {
     if (!eventTypes.length) {
@@ -123,6 +124,7 @@ const EventReportPage = () => {
     setSelectedItem(null);
     setPosition(null);
     setLoading(true);
+    setHasSearched(true);
     try {
       const response = await fetchOrThrow(`/api/reports/events?${query.toString()}`, {
         headers: { Accept: 'application/json' },
@@ -312,7 +314,18 @@ const EventReportPage = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {!loading ? (
+              {loading ? (
+                <TableShimmer columns={columns.length + 2} />
+              ) : hasSearched && items.length === 0 ? (
+                 <TableRow>
+                   <TableCell colSpan={columns.length + 2} align="center">
+                     <div style={{ padding: 24, color: '#888' }}>
+                       <strong>{t('noData')}</strong>
+                       <div>{t('reportNoResults')}</div>
+                     </div>
+                   </TableCell>
+                 </TableRow>
+              ) : (
                 items.map((item) => (
                   <TableRow key={item.id}>
                     <TableCell className={classes.columnAction} padding="none">
@@ -334,8 +347,6 @@ const EventReportPage = () => {
                     ))}
                   </TableRow>
                 ))
-              ) : (
-                <TableShimmer columns={columns.length + 2} />
               )}
             </TableBody>
           </Table>

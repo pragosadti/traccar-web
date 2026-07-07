@@ -629,5 +629,10 @@
     "categoryVan": "Paneelwa",
     "categoryScooter": "Moffiebike",
     "maintenanceStart": "Aan",
-    "maintenancePeriod": "Periode"
+    "maintenancePeriod": "Periode",
+    "grouped": "Grouped",
+    "sharedClearFilters": "Clear Filters",
+    "ignition": "Ignition",
+    "ignitionReport": "Ignition Report",
+    "reportNoResults": "No results found with the selected filters."
 }
