@@ -60,6 +60,11 @@ const ReportFilter = ({ children, onShow, onExport, onSchedule, deviceType, load
   const [description, setDescription] = useState();
   const [calendarId, setCalendarId] = useState();
 
+  const resetCustomRange = () => {
+    setCustomFrom(dayjs().subtract(1, 'hour').locale('en').format('YYYY-MM-DDTHH:mm'));
+    setCustomTo(dayjs().locale('en').format('YYYY-MM-DDTHH:mm'));
+  };
+
   const evaluateDisabled = () => {
     if (deviceType === 'single' && !deviceIds.length) {
       return true;
@@ -271,7 +276,7 @@ const ReportFilter = ({ children, onShow, onExport, onSchedule, deviceType, load
           <Button
             fullWidth
             variant="outlined"
-            color="secondary"
+            color="primary"
             disabled={disabled}
             onClick={onClick}
           >
@@ -283,7 +288,7 @@ const ReportFilter = ({ children, onShow, onExport, onSchedule, deviceType, load
           <SplitButton
             fullWidth
             variant="outlined"
-            color="secondary"
+            color="primary"
             disabled={disabled}
             onClick={onClick}
             selected={selectedOption}
@@ -294,17 +299,15 @@ const ReportFilter = ({ children, onShow, onExport, onSchedule, deviceType, load
         <div className={classes.filterItem}>
           <Button
             fullWidth
-            variant="outlined"
-            color="primary"
+            variant="contained"
+            color="secondary"
             style={{ marginTop: 10 }}
             onClick={() => {
-              dispatch(devicesActions.selectId(null));
-              dispatch(devicesActions.selectIds([]));
-              dispatch(reportsActions.updateGroupIds([]));
-              dispatch(reportsActions.updatePeriod('today'));
-              dispatch(reportsActions.updateFrom(''));
-              dispatch(reportsActions.updateTo(''));
-              setCalendarId(null);
+              setSearchParams(new URLSearchParams(), { replace: true });
+              setSelectedOption('json');
+              setPeriod('today');
+              resetCustomRange();
+              setCalendarId(undefined);
               setDescription('');
             }}
           >
