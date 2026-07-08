@@ -217,12 +217,12 @@ const ChartReportPage = () => {
             </LineChart>
           </ResponsiveContainer>
         </div>
-       ) : hasSearched ? (
-         <div style={{ padding: 24, color: '#888', textAlign: 'center' }}>
-           <strong>{t('noData')}</strong>
-           <div>{t('reportNoResults')}</div>
-         </div>
-       ) : null}
+      ) : hasSearched ? (
+        <div style={{ padding: 24, color: '#888', textAlign: 'center' }}>
+          <strong>{t('noData')}</strong>
+          <div>{t('reportNoResults')}</div>
+        </div>
+      ) : null}
     </PageLayout>
   );
 };

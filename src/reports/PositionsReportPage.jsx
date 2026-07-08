@@ -178,14 +178,14 @@ const PositionsReportPage = () => {
               {loading ? (
                 <TableShimmer columns={columns.length + 1} startAction />
               ) : hasSearched && items.length === 0 ? (
-                 <TableRow>
-                   <TableCell colSpan={columns.length + 1} align="center">
-                     <div style={{ padding: 24, color: '#888' }}>
-                       <strong>{t('noData')}</strong>
-                       <div>{t('reportNoResults')}</div>
-                     </div>
-                   </TableCell>
-                 </TableRow>
+                <TableRow>
+                  <TableCell colSpan={columns.length + 1} align="center">
+                    <div style={{ padding: 24, color: '#888' }}>
+                      <strong>{t('noData')}</strong>
+                      <div>{t('reportNoResults')}</div>
+                    </div>
+                  </TableCell>
+                </TableRow>
               ) : (
                 items.slice(0, 4000).map((item) => (
                   <TableRow key={item.id}>

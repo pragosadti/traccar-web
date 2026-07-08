@@ -311,10 +311,11 @@ const ReportFilter = ({ children, onShow, onExport, onSchedule, deviceType, load
               setDescription('');
             }}
           >
-            <Typography variant="button" noWrap>{t('sharedClearFilters') || 'Clear Filters'}</Typography>
+            <Typography variant="button" noWrap>
+              {t('sharedClearFilters') || 'Clear Filters'}
+            </Typography>
           </Button>
         </div>
-
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -52,7 +52,11 @@ const IgnitionReportPage = () => {
   const distanceUnit = useAttributePreference('distanceUnit');
   const speedUnit = useAttributePreference('speedUnit');
   const volumeUnit = useAttributePreference('volumeUnit');
-  const [columns, setColumns] = usePersistedState('ignitionColumns', ['geofence', 'startTime', 'engineHours']);
+  const [columns, setColumns] = usePersistedState('ignitionColumns', [
+    'geofence',
+    'startTime',
+    'engineHours',
+  ]);
   const [daily, setDaily] = useState(false);
   const [grouped, setGrouped] = useState(false);
   const [items, setItems] = useState([]);
@@ -63,19 +67,12 @@ const IgnitionReportPage = () => {
     setColumns(['geofence', 'startTime', 'engineHours']);
   }, []);
 
-  const handleSubmit = useCatch(async ({
-    deviceIds,
-    groupIds,
-    from,
-    to,
-    type,
-    grouped
-  }) => {
+  const handleSubmit = useCatch(async ({ deviceIds, groupIds, from, to, type, grouped }) => {
     const query = new URLSearchParams({
       from,
       to,
       daily,
-      grouped
+      grouped,
     });
     deviceIds.forEach((deviceId) => query.append('deviceId', deviceId));
     groupIds.forEach((groupId) => query.append('groupId', groupId));
@@ -151,13 +148,23 @@ const IgnitionReportPage = () => {
   };
 
   return (
-    <PageLayout menu={<ReportsMenu/>} breadcrumbs={['reportTitle', 'reportIgnition']}>
+    <PageLayout menu={<ReportsMenu />} breadcrumbs={['reportTitle', 'reportIgnition']}>
       <div className={classes.header}>
-        <ReportFilter onShow={onShow} onExport={onExport} onSchedule={handleSchedule} deviceType="multiple" loading={loading}>
+        <ReportFilter
+          onShow={onShow}
+          onExport={onExport}
+          onSchedule={handleSchedule}
+          deviceType="multiple"
+          loading={loading}
+        >
           <div className={classes.filterItem}>
             <FormControl fullWidth>
               <InputLabel>{t('sharedType')}</InputLabel>
-              <Select label={t('sharedType')} value={daily} onChange={(e) => setDaily(e.target.value)}>
+              <Select
+                label={t('sharedType')}
+                value={daily}
+                onChange={(e) => setDaily(e.target.value)}
+              >
                 <MenuItem value={false}>{t('ignitionReport')}</MenuItem>
               </Select>
             </FormControl>
@@ -165,23 +172,28 @@ const IgnitionReportPage = () => {
           <div className={classes.filterItem}>
             <FormControl>
               <FormGroup>
-                <FormControlLabel control={
-                  <Checkbox
-                    checked={grouped}
-                    onChange={(event) => setGrouped(event.target.checked)}
-                  />
-                } label={t('grouped')}/>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={grouped}
+                      onChange={(event) => setGrouped(event.target.checked)}
+                    />
+                  }
+                  label={t('grouped')}
+                />
               </FormGroup>
             </FormControl>
           </div>
-          <ColumnSelect columns={columns} setColumns={setColumns} columnsArray={columnsArray}/>
+          <ColumnSelect columns={columns} setColumns={setColumns} columnsArray={columnsArray} />
         </ReportFilter>
       </div>
       <Table>
         <TableHead>
           <TableRow>
             <TableCell>{t('sharedDevice')}</TableCell>
-            {columns.map((key) => (<TableCell key={key}>{t(columnsMap.get(key))}</TableCell>))}
+            {columns.map((key) => (
+              <TableCell key={key}>{t(columnsMap.get(key))}</TableCell>
+            ))}
           </TableRow>
         </TableHead>
 
@@ -189,28 +201,25 @@ const IgnitionReportPage = () => {
           {loading ? (
             <TableShimmer columns={columns.length + 1} />
           ) : hasSearched && items.length === 0 ? (
-             <TableRow>
-               <TableCell colSpan={columns.length + 1} align="center">
-                 <div style={{ padding: 24, color: '#888' }}>
-                   <strong>{t('noData')}</strong>
-                   <div>{t('reportNoResults')}</div>
-                 </div>
-               </TableCell>
-             </TableRow>
+            <TableRow>
+              <TableCell colSpan={columns.length + 1} align="center">
+                <div style={{ padding: 24, color: '#888' }}>
+                  <strong>{t('noData')}</strong>
+                  <div>{t('reportNoResults')}</div>
+                </div>
+              </TableCell>
+            </TableRow>
           ) : (
             items.map((item) => (
-              <TableRow key={(`${item.deviceId}_${Date.parse(item.startTime)}`)}>
+              <TableRow key={`${item.deviceId}_${Date.parse(item.startTime)}`}>
                 <TableCell>{devices[item.deviceId].name}</TableCell>
                 {columns.map((key) => (
-                  <TableCell key={key}>
-                    {formatValue(item, key)}
-                  </TableCell>
+                  <TableCell key={key}>{formatValue(item, key)}</TableCell>
                 ))}
               </TableRow>
             ))
           )}
         </TableBody>
-
       </Table>
     </PageLayout>
   );

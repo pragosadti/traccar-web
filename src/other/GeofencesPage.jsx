@@ -86,7 +86,6 @@ const GeofencesPage = () => {
     [geofences],
   );
 
-
   const handleSearchChange = (value) => setSearchInput(value);
 
   const handleSelect = (value) => {

@@ -92,16 +92,16 @@ const CombinedReportPage = () => {
             <TableBody>
               {loading ? (
                 <TableShimmer columns={3} />
-               ) : hasSearched && items.length === 0 ? (
-                 <TableRow>
-                   <TableCell colSpan={3} align="center">
-                     <div style={{ padding: 24, color: '#888' }}>
-                       <strong>{t('noData')}</strong>
-                       <div>{t('reportNoResults')}</div>
-                     </div>
-                   </TableCell>
-                 </TableRow>
-               ) : (
+              ) : hasSearched && items.length === 0 ? (
+                <TableRow>
+                  <TableCell colSpan={3} align="center">
+                    <div style={{ padding: 24, color: '#888' }}>
+                      <strong>{t('noData')}</strong>
+                      <div>{t('reportNoResults')}</div>
+                    </div>
+                  </TableCell>
+                </TableRow>
+              ) : (
                 items.flatMap((item) =>
                   item.events.map((event, index) => (
                     <TableRow key={event.id}>

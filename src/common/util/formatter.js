@@ -110,8 +110,6 @@ export const formatNumericHoursWithSeconds = (value, t) => {
   return `${hours} ${t('sharedHourAbbreviation')} ${minutes} ${t('sharedMinuteAbbreviation')} ${seconds} ${t('sharedSecondAbbreviation')}`;
 };
 
-
-
 export const formatCoordinate = (key, value, unit) => {
   let hemisphere;
   let degrees;
