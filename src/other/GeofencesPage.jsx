@@ -42,6 +42,7 @@ const useStyles = makeStyles()((theme) => ({
   drawer: {
     display: 'flex',
     flexDirection: 'column',
+    overflow: 'hidden',
     [theme.breakpoints.up('sm')]: { width: theme.dimensions.drawerWidthDesktop },
     [theme.breakpoints.down('sm')]: { height: theme.dimensions.drawerHeightPhone },
   },

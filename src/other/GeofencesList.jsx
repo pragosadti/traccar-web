@@ -1,10 +1,20 @@
 import { Fragment } from 'react';
 import { List, ListItemButton, ListItemText, Divider } from '@mui/material';
+import { makeStyles } from 'tss-react/mui';
 import CollectionActions from '../settings/components/CollectionActions';
 
+const useStyles = makeStyles()(() => ({
+  list: {
+    flex: 1,
+    overflow: 'auto',
+    minHeight: 0,
+  },
+}));
+
 const GeofencesList = ({ geofences = [], selectedGeofenceId, onGeofenceSelected }) => {
+  const { classes } = useStyles();
   return (
-    <List>
+    <List className={classes.list}>
       {geofences.map((item, index, list) => (
         <Fragment key={item.id}>
           <ListItemButton

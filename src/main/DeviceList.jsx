@@ -11,22 +11,6 @@ const useStyles = makeStyles()((theme) => ({
   list: {
     height: '100%',
     direction: theme.direction,
-    scrollbarWidth: 'thin',
-    scrollbarColor: `${theme.palette.primary.main} ${theme.palette.background.default}`,
-    '&::-webkit-scrollbar': {
-      width: theme.spacing(1),
-    },
-    '&::-webkit-scrollbar-track': {
-      backgroundColor: theme.palette.background.default,
-    },
-    '&::-webkit-scrollbar-thumb': {
-      backgroundColor: theme.palette.primary.main,
-      border: `2px solid ${theme.palette.background.default}`,
-      borderRadius: '999px',
-    },
-    '&::-webkit-scrollbar-thumb:hover': {
-      backgroundColor: theme.palette.primary.main,
-    },
   },
   listInner: {
     position: 'relative',
