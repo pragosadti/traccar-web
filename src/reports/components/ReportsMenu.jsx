@@ -86,7 +86,7 @@ const ReportsMenu = () => {
         />
         <MenuItem
           title={t('ignition')}
-          link="/reports/ignition"
+          link={buildLink('/reports/ignition')}
           icon={<FormatListBulletedIcon />}
           selected={location.pathname === '/reports/ignition'}
         />

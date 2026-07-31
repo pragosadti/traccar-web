@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -62,10 +62,6 @@ const IgnitionReportPage = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
-
-  useEffect(() => {
-    setColumns(['geofence', 'startTime', 'engineHours']);
-  }, []);
 
   const handleSubmit = useCatch(async ({ deviceIds, groupIds, from, to, type, grouped }) => {
     const query = new URLSearchParams({
